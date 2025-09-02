@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Mini Mercado Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="bg-primary text-white text-center p-3">
+    <h1>Mini Mercado Online</h1>
+    <nav>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="produtos.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="servicos.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="container mt-4">
+    <h2>Serviços</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Entrega em domicílio</h3>
+            <p>Levamos suas compras até sua casa com rapidez e segurança.</p>
+            <p><strong>R$ 5,00</strong></p>
+        </div>
+        <div class="col-md-4">
+            <h3>Moagem de carne</h3>
+            <p>Moagem feita na hora para garantir frescor.</p>
+            <p><strong>R$ 3,00 por kg</strong></p>
+        </div>
+        <div class="col-md-4">
+            <h3>Corte personalizado de carnes</h3>
+            <p>Cortamos a carne do jeito que você preferir.</p>
+            <p><strong>R$ 2,00 por serviço</strong></p>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Agendamento</h2>
+    <form id="formServico" class="mt-3">
+        <label>Serviço:</label><br>
+        <input type="radio" name="servico" value="Retirada" required> Retirada
+        <input type="radio" name="servico" value="Tele-entrega"> Tele-entrega<br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <button type="submit" class="btn btn-primary">Agendar</button>
+    </form>
+</section>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>© 2025 Mini Mercado Online - Desenvolvido por Cassius</p>
+    <p>Contato: contato@minimercado.com</p>
+    <p>
+        <a class="text-white" href="index.html">Home</a> |
+        <a class="text-white" href="produtos.html">Produtos</a> |
+        <a class="text-white" href="servicos.html">Serviços</a> |
+        <a class="text-white" href="cadastro.html">Cadastro</a>
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
